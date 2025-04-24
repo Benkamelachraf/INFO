@@ -38,7 +38,7 @@ $etudiants = $conn->query("SELECT * FROM etudiant");
 
 <h2><?= $editMode ? "Modifier" : "Ajouter" ?> un étudiant</h2>
 
-<form action="action.php" method="POST">
+<form action="action.php" method="POST" onsubmit="return validateForm()">
     <input type="text" name="cin" placeholder="CIN" required value="<?= $cin ?>" <?= $editMode ? 'readonly' : '' ?>><br>
     <input type="text" name="nom" placeholder="Nom" required value="<?= $nom ?>"><br>
     <input type="text" name="prenom" placeholder="Prénom" required value="<?= $prenom ?>"><br>
