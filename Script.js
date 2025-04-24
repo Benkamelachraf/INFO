@@ -4,7 +4,7 @@ function confirmDelete(cin) {
 
     window.location.href = "action.php?delete=" + cin;
   }
-}
+}//action.php?delete=7352863
 
 function validateForm() {
   const nom = document.querySelector('[name="nom"]').value;
