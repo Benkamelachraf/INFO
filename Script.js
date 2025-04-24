@@ -7,6 +7,7 @@ function confirmDelete(cin) {
 }//action.php?delete=7352863
 
 function validateForm() {
+  //function pour respecter les longueurs max et min
   const nom = document.querySelector('[name="nom"]').value;
   const prenom = document.querySelector('[name="prenom"]').value;
   const adresse = document.querySelector('[name="adresse"]').value;
